@@ -1,4 +1,8 @@
 defmodule TeamBudgetWeb.Telemetry do
+  @moduledoc """
+  Telemetry módule
+  """
+
   use Supervisor
   import Telemetry.Metrics
 
