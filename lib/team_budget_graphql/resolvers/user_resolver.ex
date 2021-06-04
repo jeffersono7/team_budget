@@ -1,7 +1,7 @@
 defmodule TeamBudgetGraphql.Resolvers.UserResolver do
+  alias TeamBudget.Accounts
+
   def list_users(_parent, _params, _resolutions) do
-
-
-    {:ok, %{email: "jefferson@nvidia.com"}}
+    {:ok, Accounts.list_users()}
   end
 end
